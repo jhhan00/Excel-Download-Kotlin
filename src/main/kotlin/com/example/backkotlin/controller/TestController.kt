@@ -84,10 +84,10 @@ class TestController {
 
     @PostMapping("/excel2")
     fun getExcelFile2(@RequestBody iads: List<IntAndDouble>, response: HttpServletResponse): ResponseEntity<Any> {
+        println("Excel Start-2!")
         for (iad in iads) {
             println(iad)
         }
-        println("Excel Start-2!")
 
         val wb = XSSFWorkbook()
         val sheet = wb.createSheet("sheet1")
