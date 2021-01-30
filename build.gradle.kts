@@ -25,6 +25,8 @@ dependencies {
 
     implementation("org.apache.poi:poi:4.1.2")
     implementation("org.apache.poi:poi-ooxml:4.1.2")
+
+    implementation("com.univocity:univocity-parsers:2.8.4")
 }
 
 tasks.withType<KotlinCompile> {
